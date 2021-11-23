@@ -4,9 +4,12 @@ Hosted at <https://tanguyandreani.me>
 
 This is my personal space on the internet.
 
-```
+```bash
 yarn
-npx webpack build
+yarn run start # dev
+yarn run start-prod # prod
+yarn run build # prod
+yarn run build-dev # dev
 ```
 
 ## Technologies
@@ -14,4 +17,3 @@ npx webpack build
 - Webpack
 - PostCSS
 - Tailwind CSS
-- Animate.css
