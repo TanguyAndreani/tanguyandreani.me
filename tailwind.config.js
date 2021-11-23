@@ -1,14 +1,37 @@
 module.exports = {
   purge: {
-    enabled: false,
-    content: [ './public/**/*.html' ],
+    enabled: true,
+    content: [ './src/**/*.html', './src/**/*.js' ],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'menu': ['Patrick Hand', 'cursive'],
+        'title': ['Ubuntu', 'sans-serif'],
+        'paragraph': ['Ubuntu', 'sans-serif']
+      },
+      keyframes: {
+        scalex: {
+          '0%': { transform: 'scaleX(0.1)' },
+          '100%': { transform: 'scaleX(1)' },
+        },
+        scrollin: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '100' },
+        }
+      },
+      animation: {
+        scalex: 'scalex 1s ease-in-out',
+        fadein: 'scrollin 1s ease-in forwards',
+        'fadein-faster': 'scrollin 0.3s ease-in forwards',
+      }
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 }
