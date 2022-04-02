@@ -3,8 +3,8 @@ import React from 'react'
 import logo360 from '../../assets/logo360.png'
 import logo360white from '../../assets/logo360white.png'
 import logoEpitech from '../../assets/logoEpitech.png'
-import logoIsula from '../../352B00F5-BFB2-4A7D-933D-60970A62C3F3.png'
-import logoIsulaWhite from '../../D2072476-36F6-43D6-991D-4362775FE1B8.png'
+import logoIsula from '../../assets/352B00F5-BFB2-4A7D-933D-60970A62C3F3.png'
+import logoIsulaWhite from '../../assets/D2072476-36F6-43D6-991D-4362775FE1B8.png'
 
 import Company from './company'
 
