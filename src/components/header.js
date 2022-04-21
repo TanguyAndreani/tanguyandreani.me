@@ -14,7 +14,7 @@ export default class Header extends React.Component {
                 <hr class="mb-8 mt-4 border-2 w-32 animate-scalex origin-left"></hr>
                 <div class="text-xl sm:text-2xl text-left">
                     <MenuLink link="https://tanguyandreani.github.io" text="Blog" color="border-red-400" />
-                    <MenuLink link="https://ams3.digitaloceanspaces.com/neocitizen/cv.pdf" text="CV" color="border-yellow-300" />
+                    <MenuLink link="https://ftp.cyberpunked.me/tanguy_andreani_cv.pdf" text="CV" color="border-yellow-300" />
                     <MenuLink link="mailto:hello@tanguyandreani.me" text="hello@tanguyandreani.me" color="border-blue-300" />
                 </div>
             </header>
