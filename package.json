@@ -18,18 +18,20 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-ui-animate": "^1.1.8",
+    "source-map-explorer": "^2.5.3",
     "style-loader": "^3.2.1",
     "tailwindcss": "^2.2.8",
+    "tailwindcss-animation-delay": "^1.0.7",
+    "url-loader": "^4.1.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.0.0",
-    "tailwindcss-animation-delay": "^1.0.7",
-    "url-loader": "^4.1.1"
+    "webpack-dev-server": "^4.0.0"
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "start-prod": "webpack-dev-server --config webpack.prod.js",
     "build": "webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js"
+    "build-dev": "webpack --config webpack.dev.js",
+    "analyze": "source-map-explorer 'public/*.js'"
   }
 }

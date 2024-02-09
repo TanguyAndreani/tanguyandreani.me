@@ -1,10 +1,10 @@
 import React from 'react'
 
-import logo360 from '../../assets/logo360.png'
-import logo360white from '../../assets/logo360white.png'
-import logoEpitech from '../../assets/logoEpitech.png'
-import logoIsula from '../../assets/82B64287-808F-4100-9321-0246E2114FA3.png'
-import logoIsulaWhite from '../../assets/0C0DAEE4-21E8-46E5-9F54-16E80F2CBAE3.png'
+import logo360 from '../../assets/360.png'
+import logo360white from '../../assets/360-dark-theme.png'
+import logoEpitech from '../../assets/epitech.png'
+import logoIsula from '../../assets/isula.png'
+import logoIsulaWhite from '../../assets/isula-dark-theme.png'
 
 import Company from './company'
 

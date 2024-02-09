@@ -15,10 +15,11 @@ const postcss_common_plugins = mode => {
     return [
       'autoprefixer',
       'postcss-csso',
-/*      [
+      /*[
         '@fullhuman/postcss-purgecss', {
-          content: ['./src/***.html', './src/***.js'],
-          keyframes: true
+          
+          keyframes: true,
+          
         }
       ]*/
     ]
@@ -51,7 +52,20 @@ const webpack_loaders = (mode, before_plugins, after_plugins) => [
 module.exports = mode => ({
   mode: mode,
   entry: {
-    index: "./src/index.js"
+    index: {
+      import: "./src/index.js",
+      dependOn: ['styles', 'assets'],
+    },
+    assets: [
+      './assets/360.png',
+      './assets/360-dark-theme.png',
+      './assets/epitech.png',
+      './assets/isula.png',
+      './assets/isula-dark-theme.png'
+    ],
+    styles: [
+      './src/styles.css'
+    ],
   },
   output: {
     path: path.resolve(__dirname, "public"),

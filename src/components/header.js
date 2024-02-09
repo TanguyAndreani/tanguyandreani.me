@@ -10,7 +10,7 @@ export default class Header extends React.Component {
                 <div className="text-center mb-8">
                     <DarkModeToggle parent={this.props.parent} darkMode={this.props.darkMode} />
                 </div>
-                <h1 class="text-5xl font-bold font-title">Tanguy Andreani <span class="text-gray-300 font-title">{'{'}</span></h1>
+                <h1 class="text-5xl font-bold font-title">Tanguy Andreani <span class="text-gray-500 font-title">{'{'}</span></h1>
                 <hr class="mb-8 mt-4 border-2 w-32 animate-scalex origin-left"></hr>
                 <div class="text-xl sm:text-2xl text-left">
                     <MenuLink link="https://tanguyandreani.github.io" text="Blog" color="border-red-400" />
