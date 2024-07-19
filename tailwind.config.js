@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'menu': ['Patrick Hand', 'cursive'],
-        'title': ['Ubuntu', 'sans-serif'],
-        'paragraph': ['Ubuntu', 'sans-serif']
+        'title': ['sans-serif'],
+        'paragraph': ['sans-serif']
       },
       keyframes: {
         scalex: {

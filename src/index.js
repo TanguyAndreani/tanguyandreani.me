@@ -1,8 +1,8 @@
 import "./styles.css"
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import {h, render} from 'preact'
+
 
 import MainContainer from "./components/main_container"
 
-ReactDOM.render(<MainContainer/>, document.getElementById('root'));
+render(<MainContainer/>, document.getElementById('root'));

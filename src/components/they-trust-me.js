@@ -1,4 +1,6 @@
-import React from 'react'
+import {h, Component} from 'preact'
+
+
 
 import logo360 from '../../assets/360.png'
 import logo360white from '../../assets/360-dark-theme.png'
@@ -8,7 +10,7 @@ import logoIsulaWhite from '../../assets/isula-dark-theme.png'
 
 import Company from './company'
 
-export default class TheyTrustMe extends React.Component {
+export default class TheyTrustMe extends Component {
     render() {
         return (
             <div className="TheyTrustMe">

@@ -15,13 +15,6 @@ const postcss_common_plugins = mode => {
     return [
       'autoprefixer',
       'postcss-csso',
-      /*[
-        '@fullhuman/postcss-purgecss', {
-          
-          keyframes: true,
-          
-        }
-      ]*/
     ]
   } else { /* development */
     return [
@@ -54,15 +47,8 @@ module.exports = mode => ({
   entry: {
     index: {
       import: "./src/index.js",
-      dependOn: ['styles', 'assets'],
+      dependOn: ['styles'],
     },
-    assets: [
-      './assets/360.png',
-      './assets/360-dark-theme.png',
-      './assets/epitech.png',
-      './assets/isula.png',
-      './assets/isula-dark-theme.png'
-    ],
     styles: [
       './src/styles.css'
     ],
@@ -88,9 +74,7 @@ module.exports = mode => ({
       },
       {
         test: /\.(jpg|png)$/,
-        use: {
-          loader: 'url-loader',
-        },
+        type: 'asset/resource',
       },
     ]
   },
@@ -113,4 +97,13 @@ module.exports = mode => ({
       chunks: 'all'
     }
   },
+   //...snip
+   resolve: {
+    alias: {
+      "react": "preact/compat",
+      "react-dom/test-utils": "preact/test-utils",
+      "react-dom": "preact/compat",     // Must be below test-utils
+      "react/jsx-runtime": "preact/jsx-runtime"
+    }
+  }
 })

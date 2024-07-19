@@ -1,6 +1,8 @@
-import React from 'react'
+import {h, Component} from 'preact'
 
-export default class Company extends React.Component {
+
+
+export default class Company extends Component {
     render() {
         return (
             <div class="block md:inline-block mr-8">

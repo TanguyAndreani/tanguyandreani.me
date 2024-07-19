@@ -1,33 +1,27 @@
-import React from 'react'
+import {h, Component} from 'preact'
 
 import TheyTrustMe from './they-trust-me'
 import Header from './header'
 import Footer from './footer'
 import About from './about'
 
-
-if (localStorage.theme == 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    localStorage.theme = 'dark'
-    document.getElementById('dark_toggle').classList.add('dark')
-} else {
-    localStorage.theme = 'light'
-    document.getElementById('dark_toggle').classList.remove('dark')
-}
-
-console.log(localStorage.theme)
-console.log(document.getElementById('dark_toggle').classList)
-
-export default class MainContainer extends React.Component {
+export default class MainContainer extends Component {
     constructor(props) {
         super(props);
+        if (localStorage.theme == 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            localStorage.theme = 'dark'
+            document.getElementById('dark_toggle').classList.add('dark')
+        } else {
+            localStorage.theme = 'light'
+            document.getElementById('dark_toggle').classList.remove('dark')
+        }
         this.state = ({darkMode: localStorage.theme == 'dark'})
-        console.log(this.state)
         this.toggleDarkMode = this.toggleDarkMode.bind(this)
     }
     
     toggleDarkMode() {
         localStorage.theme = !this.state.darkMode ? 'dark' : 'light'
-        this.setState((prevState) => { console.log(prevState); return ({ darkMode: (localStorage.theme == 'dark') }) })
+        this.setState(() => { return ({ darkMode: (localStorage.theme == 'dark') }) })
         if (localStorage.theme == 'dark')
             document.getElementById('dark_toggle').classList.add('dark')
         else
