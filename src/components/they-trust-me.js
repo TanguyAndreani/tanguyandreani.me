@@ -24,7 +24,7 @@ export default class TheyTrustMe extends Component {
                     <div class="inline-block mt-8 animate-fadein md:mt-0 opacity-0 animation-delay-200">
                         <Company logo={logoEpitech} title="Assistant pédagogique (AER)" time_period="septembre 2021 - mars 2022" />
                     </div>
-                    <div class="inline-block animate-fadein opacity-0 animation-delay-400">
+                    <div class="inline-block animate-fadein mt-8 md:mt-0 opacity-0 animation-delay-400">
                         <Company logo={localStorage.theme == 'dark' ? logo360white : logo360} title="Stage fullstack developer" time_period="août 2020 - décembre 2020" />
                     </div>
                 </div>
