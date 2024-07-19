@@ -16,6 +16,9 @@ export default class About extends Component {
                 <p class="text-lg mt-4">
                     Je suis ouvert aux propositions de recrutement, notamment en freelance via mon entreprise.
                 </p>
+                <p class="text-sm mt-4 text-gray-400">
+                    Dernière mise à jour: 19 juillet 2024.
+                </p>
             </div>
         )
     }
